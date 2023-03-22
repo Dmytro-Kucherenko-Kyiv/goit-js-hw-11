@@ -30,8 +30,6 @@ body {
 
 img {
   width: 380px;
-  aspect-ratio: 16/9;
-  object-fit: cover;
 }
 
 .photo-card {
@@ -41,6 +39,12 @@ img {
 	background-size: contain;
 }
 
+.photo-card img {
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	transition: all .5s ease-in-out;
+	overflow: hidden;
+}
 
 .info {
 	display: flex;
